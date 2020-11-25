@@ -12,6 +12,20 @@ body, html{
   text-align: left;
 }
 
+body::-webkit-scrollbar{
+  display: none;
+}
+
+.scroll{
+  overflow-y: scroll;
+  height: 90vh;
+  z-index: 2000;
+}
+
+.scroll::-webkit-scrollbar {
+  display: none;
+}
+
 .profile-img{
   height: 250px;
 }
