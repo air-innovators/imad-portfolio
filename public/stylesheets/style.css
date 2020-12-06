@@ -16,6 +16,19 @@ body::-webkit-scrollbar{
   display: none;
 }
 
+.bg-theme-dark{
+  background-color: #2e2e2e;
+}
+
+.text-white:hover{
+  text-decoration: none;
+}
+
+
+.icon-sm{
+  height: 17px;
+}
+
 .scroll{
   overflow-y: scroll;
   height: 90vh;
