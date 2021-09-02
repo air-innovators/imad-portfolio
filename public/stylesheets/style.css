@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap');
 body, html{
   padding: 0px;
   margin: 0px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Hina Mincho', serif;
 }
 
 .brand{
@@ -24,6 +25,21 @@ body::-webkit-scrollbar{
   text-decoration: none;
 }
 
+.fixed-sidebar{
+  width: 250px;
+}
+
+.brand{
+  color: white;
+  background-color: #2e2e2e;
+}
+
+.right{
+  right: 25px;
+  bottom: 0px;
+  z-index: 1;
+}
+
 
 .icon-sm{
   height: 17px;
@@ -44,7 +60,7 @@ body::-webkit-scrollbar{
 }
 
 .p-heading{
-  font-size: 17px;
+  font-size: 18px;
   border-left: 5px solid black;
   padding-left: 10px;
   font-weight: 700!important;
@@ -80,9 +96,42 @@ body::-webkit-scrollbar{
   padding-left: 20px;
   background-color: #2e2e2e;
   color: #fff;
-  font-size: 16px;
+  font-size: 50px;
   line-height: 70px;
   text-align: center;
   letter-spacing: 1px;
   text-transform: uppercase;
+}
+
+#about, #about-me p{
+  font-size: 18px;
+}
+
+.pr-img{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.bg-card-2{
+  background-color: #2e2e2e;
+  color: white;
+}
+
+.bg-card-2-light{
+  background-color: white;
+  color: black;
+}
+
+.grey-img{
+  filter: #2e2e2e; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+  transition: all 0.5s;
+}
+
+.grey-img:hover{
+  filter: none; /* IE6-9 */
+  -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: none; /* Microsoft Edge and Firefox 35+ */
 }
