@@ -38,4 +38,9 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+setInterval( () => {
+  http.get('http://www.imadahmed.in')
+},
+60 * 1000 * 60)
+
 module.exports = app;
