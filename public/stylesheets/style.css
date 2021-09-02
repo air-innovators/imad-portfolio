@@ -3,6 +3,7 @@ body, html{
   padding: 0px;
   margin: 0px;
   font-family: 'Hina Mincho', serif;
+  scroll-behavior: smooth;
 }
 
 .brand{
@@ -127,11 +128,17 @@ body::-webkit-scrollbar{
   filter: #2e2e2e; /* IE6-9 */
   -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
   filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
-  transition: all 0.5s;
+  transition: all 0.2s;
 }
 
 .grey-img:hover{
   filter: none; /* IE6-9 */
   -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
   filter: none; /* Microsoft Edge and Firefox 35+ */
+}
+
+@media(max-width: 699px){
+  .mobile-header{
+    padding-top: 2rem;
+  }
 }
